@@ -4,7 +4,7 @@ library(dplyr)
 library(ggplot2)
 library(RColorBrewer)
 
-# Sample data
+
 Bookings = read.csv("Booking_Dump_new.csv")
 
 Bookings$DATE <- as.Date(Bookings$DATE, format = "%d-%m-%Y")
