@@ -30,7 +30,7 @@ ui <- fluidPage(
 )
 
 server <- function(input, output) {
-  DF2 <- top_n(DF, 10)
+  DF2 <- top_n(DF, 6)
   output$Histo <- renderPlot({
     coul <- brewer.pal(5, "Set2") 
     bp <- barplot(height=DF2$total_pax, names=DF2$Customer_City, col=coul , xlab="Cities", 
